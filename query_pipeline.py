@@ -18,8 +18,8 @@ except ImportError:
 # --- This is the REAL retriever file ---
 try:
     # This imports the retriever.py file you have in your Canvas
-    import importlib
-    member3_retriever = importlib.import_module("retriever")
+    import retriever as member3_retriever
+
 
 except ImportError:
     print("="*50, file=sys.stderr)
@@ -239,5 +239,6 @@ if __name__ == "__main__":
             break
         except Exception as e:
             print(f"\nAn unexpected error occurred: {e}")
+
 
 
