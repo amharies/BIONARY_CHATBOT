@@ -1,0 +1,8 @@
+streamlit
+python-dotenv
+psycopg2-binary
+pgvector
+pandas
+sentence-transformers
+langchain
+google-generativeai
