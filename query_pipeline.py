@@ -1,4 +1,7 @@
 import os
+print("Current working directory:", os.getcwd())
+print("Files here:", os.listdir(os.getcwd()))
+
 import json
 import re
 import sys
@@ -239,6 +242,7 @@ if __name__ == "__main__":
             break
         except Exception as e:
             print(f"\nAn unexpected error occurred: {e}")
+
 
 
 
