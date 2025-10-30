@@ -1,6 +1,5 @@
-import os
-print("Current working directory:", os.getcwd())
-print("Files here:", os.listdir(os.getcwd()))
+import sys, os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 import json
 import re
@@ -242,6 +241,7 @@ if __name__ == "__main__":
             break
         except Exception as e:
             print(f"\nAn unexpected error occurred: {e}")
+
 
 
 
