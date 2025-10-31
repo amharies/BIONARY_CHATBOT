@@ -1,3 +1,4 @@
+%%writefile retriever.py
 import os
 import sys
 import psycopg2
@@ -149,4 +150,5 @@ def query_vector_db(query_text: str) -> List[str]:
         return ["No relevant documents found."]
 
     # Return the top 10 (or fewer) combined unique results
+
     return ranked_results[:10]
